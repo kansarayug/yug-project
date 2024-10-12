@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Styles */
+#header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo {
+    max-width: 150px;
+}
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Page Header Styles */
+#page-header {
+    background: url('img/page-header-bg.jpg') no-repeat center center/cover;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+#page-header.about-header {
+    background: url('img/about-header-bg.jpg') no-repeat center center/cover;
+}
+
+/* Cart Table Styles */
+#cart {
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cart th, #cart td {
+    padding: 15px;
+    text-align: left;
+}
+
+#cart thead {
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+}
+
+#cart tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+#cart tbody td {
+    border-bottom: 1px solid #ddd;
+}
+
+#cart tbody td img {
+    max-width: 100px;
+}
+
+#cart tbody input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Cart Add-on Styles */
+#cart-add1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+#cart-add1 .container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+#coupon {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#coupon input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#coupon button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#coupon button:hover {
+    background-color: #555;
+}
+
+#Subtotal {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Subtotal table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Subtotal td {
+    padding: 10px;
+}
+
+#Subtotal button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#Subtotal button:hover {
+    background-color: #555;
+}

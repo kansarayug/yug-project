@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+  <title>Sign Up</title>
+  <link rel="website icon" type="jpg" href="img/sg1.jpeg">
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="img/logo-no-background.png" class="logo"></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active"  href="login.html">login</a></li>
+            <li><a href="shop.html">shop</a></li>
+
+            <li><a href="about.html">about</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+            <input type="text" placeholder="search">
+            <button class="normal">search</button>
+            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+<style>
+  .signup-box{
+   background-color: transparent;
+  }
+
+   body {
+     background-image: url("img/signup3.jpeg");
+      background-color: transparent;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+     background-size: 100% 100%;
+   }
+   </style>
+ <script>
+   function validateform() {
+     var name = document.myform.fname.value;
+     var name = document.myform.lname.value;
+     var password = document.myform.password.value;
+     var email = document.myform.email.value;
+
+     if (name == null || name == '') {
+       alert("name can't be blank");
+       return false;
+     }
+     else if (password.length < 6) {
+       alert("password must be at least 6 characters long.");
+       return false;
+     }
+   }
+
+ </script>
+ <style>
+ </style>
+ <div class="signup-box">
+   <h1>Sign Up Now!</h1>
+
+   <h4>FootFit</h4>
+   <form name="myform" method="post" action="login.html" onsubmit="return validateform()">
+     <label>First Name:-</label>
+     <input type="text"  name="fname" placeholder="" />
+     <label>Last Name:-</label>
+     <input type="text" name="lname"placeholder="" />
+     <label>Email:-</label>
+     <input type="email" name="email" placeholder="" />
+     <label>Password:-</label>
+     <input type="password" name="password" placeholder="" />
+     <br>
+     <br>
+     
+       <input type="submit" value="submit">
+     
+
+   </form>
+   </br>
+   <p>
+     By clicking the Sign Up button,you agree to our <br />
+     <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+   </p><br>
+ </div>
+
+
+ <p class="para-2">
+   Already have an account? <a href="login.html">Login here</a>
+   Go to Website  <a href="index.html">Footfit</a>
+ </p>
+
+
+</body>
+
+</html>

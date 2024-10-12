@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo-no-background.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header"></section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f5.jpg" alt="Cartoon Astronaut Shirt 1"></td>
+                    <td>white Shoes</td>
+                    <td>Rs.649</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.649</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/np1.jpg" alt="Cartoon Astronaut Shirt 2"></td>
+                    <td>green sketchers shoes</td>
+                    <td>Rs.10999</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.10999</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f6.jpg" alt="Cartoon Astronaut Shirt 3"></td>
+                    <td>brown and blue causual shoes</td>
+                    <td>Rs.999</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.999</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt="Cartoon Astronaut Shirt 1"></td>
+                    <td>air 1 classic Jordan</td>
+                    <td>Rs.11999</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.11999</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/sp2.png" alt="Cartoon Astronaut Shirt 1"></td>
+                    <td>Jumpman MVP Men's Shoes</td>
+                    <td>Rs.5999</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.5999</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+                    <td><img src="img/products/np22.webp" alt="Cartoon Astronaut Shirt 1"></td>
+                    <td>girl pink sandals</td>
+                    <td>Rs.1099</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>Rs.1099</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add1" class="section-p1" style="display: flex; padding: 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; width: 100%;">
+            <div id="coupon" style="display: flex; flex-direction: column; gap: 10px; max-width: 300px;">
+                <h3>Apply Coupon</h3>
+                <div class="coupon-container" style="display: flex; gap: 10px;">
+                    <input type="text" placeholder="Enter your coupon" style="flex: 1;">
+                    <button class="normal" style="padding: 10px 20px; cursor: pointer;">Apply</button>
+                </div>
+            </div>
+
+            <div id="Subtotal" style="display: flex; flex-direction: column; gap: 20px; max-width: 300px;">
+                <h3>Cart Totals</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 10px; text-align: left;">Cart Subtotal</td>
+                        <td id="cart-subtotal" style="padding: 10px; text-align: right;">Rs.4,499</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; text-align: left;">Shipping</td>
+                        <td style="padding: 10px; text-align: right;">Free</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; text-align: left;"><strong>Total</strong></td>
+                        <td id="cart-total" style="padding: 10px; text-align: right;"><strong>Rs.4,499</strong></td>
+                    </tr>
+                </table>
+                <button class="normal" style="padding: 10px 20px; cursor: pointer;">Proceed To Check Out</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
